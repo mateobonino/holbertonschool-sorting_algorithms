@@ -22,19 +22,19 @@ void selection_sort(int *array, size_t size)
 				print = 1;
 			}
 		}
-		swap_arr(&array[i], &array[min]);
+		swap_array(&array[i], &array[min]);
 		if (print)
 			print_array(array, size);
 		print = 0;
 	}
 }
 /**
-* swap_arr - swaps an array
+* swap_array - swaps an array
 * @a: the first position
 * @b: the second position
 * Return: void function
 */
-void swap_arr(int *a, int *b)
+void swap_array(int *a, int *b)
 {
 	unsigned int temp = 0;
 
