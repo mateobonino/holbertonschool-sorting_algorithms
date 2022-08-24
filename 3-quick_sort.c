@@ -10,7 +10,15 @@ void quick_sort(int *array, size_t size)
 
 	if (!array || !size)
 		return;
-	i = size;
-	
-	
+	pivot = (int) size - 1;
+	for (i = 0; i < r; i++)
+	{
+		if (array[pivot] > array[i])
+		{
+			swap_arr(&array[j], &array[i]);
+			j++;
+		}
+	}
+	swap_arr(&array[i], &array[pivot]);
+	quick_sort_recursion()
 }
